@@ -1,0 +1,57 @@
+body{
+    background-color:#b381fa;
+}
+
+h1{
+    color: darkgoldenrod;
+}
+
+img{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.texto{
+    width: 100%;
+    background-color: azure;
+    text-align: center;
+}
+.grupo-fotos{
+    background-color: aqua;
+}
+
+.foto{
+    background-color: darkgreen;
+    width: 30%;
+    display: inline-block;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+/*-----Botón-----*/
+
+.myButton {
+	box-shadow: 0px 10px 14px -7px #7edb53;
+	background:linear-gradient(to bottom, #bdf5a1 5%, #2a7d00 100%);
+	background-color:#bdf5a1;
+	border-radius:15px;
+	border:4px solid #081202;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:27px;
+	font-weight:bold;
+	padding:19px 72px;
+	text-decoration:none;
+	text-shadow:28px 20px 8px #5b8a3c;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #2a7d00 5%, #bdf5a1 100%);
+	background-color:#2a7d00;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
