@@ -1,5 +1,13 @@
+@font-face{
+	font-family: "FuenteLinda";
+	src: url("fonts/DynaPuff-VariableFont_wdth\,wght.ttf");
+}
+
+
 body{
     background-color:#b381fa;
+	font-family:'FuenteLinda';
+	font-size: xx-large;
 }
 
 h1{
@@ -54,4 +62,23 @@ img{
 .myButton:active {
 	position:relative;
 	top:1px;
+}
+
+#listanav{
+	background-color: burlywood;
+	list-style:none;
+	border-radius: 5px;
+	position: fixed;
+}
+#listanav a{
+	text-decoration: none;
+	color:#2a7d00;
+	font-size: 20px;
+}
+#listanav a:hover{
+	color:chocolate;
+}
+#listanav li{
+	display: inline-block;
+	padding: 5px;
 }
