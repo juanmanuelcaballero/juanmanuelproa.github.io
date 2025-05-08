@@ -1,0 +1,14 @@
+#subtitulo{
+    position: absolute;
+    top: 50px;
+}
+
+#cambio{
+    position: absolute;
+    top: 100px;
+}
+
+#accion{
+    position: absolute;
+    top:120px;
+}

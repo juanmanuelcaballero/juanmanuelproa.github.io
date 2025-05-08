@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    
+    <h1 id="titulo">Título de la página</h1>
+    <h2 id="subtitulo">Subtítulo</h2>
+    <button id="cambio" onclick="ocultar()">Boton</button>
+    <p id="accion"></p>
+
+    <script type="text/javascript">
+        function ocultar(){
+            const texto1 = document.getElementById("titulo");
+
+            if(texto1.getAttribute("style") === "display:block"){
+                texto1.setAttribute("style", "display:none");
+                document.getElementById("cambio").innerHTML = "Mostrar";
+                vista = "none";
+            }
+            else{
+                texto1.setAttribute("style", "display:block");
+                document.getElementById("cambio").innerHTML = "Ocultar";
+                vista = "block";
+            }
+        }
+        
+        const btn1 = document.getElementById("cambio");
+        btn1.addEventListener("mouseover", adentro);
+        btn1.addEventListener("mouseout", afuera);
+        btn1.addEventListener("click", clickboton);
+
+        function adentro(){
+            document.getElementById("accion").innerHTML = "Mouse sobre el botón";
+        }
+        function afuera(){
+            document.getElementById("accion").innerHTML = "Mouse fuera del botón";
+        }
+        function clickboton(){
+            document.getElementById("accion").innerHTML = "Click sobre el botón";
+        }
+
+    </script>
 </body>
 </html>
